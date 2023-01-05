@@ -3,6 +3,7 @@ import axios from 'axios'
 export async function loginService(data, setToken, setError) {
     const userName = data.username
     const password = data.password
+    // eslint-disable-next-line no-undef
     const authBuffer = Buffer.from(`${userName}:${password}`, 'utf-8').toString(
         'base64',
     )
