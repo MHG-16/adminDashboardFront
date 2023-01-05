@@ -1,6 +1,6 @@
 name: Next App CI
 # Controls when the action will run.
-on: [push]
+
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
     react-app-workflow:
@@ -14,7 +14,7 @@ jobs:
               with:
                   node-version: 14.x
             - name: npm ci
-              run: npm ci
+              run: npm install
             - name: test
               run: npm test
             - name: format
