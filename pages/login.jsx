@@ -43,7 +43,6 @@ function Form() {
                     placeholder="Email or Username"
                     id="username"
                     required
-                    autoFocus
                     {...register('username')}
                     onChange={() => setError('')}
                 />
