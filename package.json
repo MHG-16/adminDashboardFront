@@ -1,19 +1,30 @@
 {
-  "name": "admin_dashboard",
-  "version": "0.1.0",
-  "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
-  },
-  "dependencies": {
-    "@next/font": "13.1.1",
-    "eslint": "8.31.0",
-    "eslint-config-next": "13.1.1",
-    "next": "13.1.1",
-    "react": "18.2.0",
-    "react-dom": "18.2.0"
-  }
+    "name": "admin_dashboard",
+    "version": "0.1.0",
+    "private": true,
+    "scripts": {
+        "dev": "next dev",
+        "build": "next build",
+        "start": "next start",
+        "lint": "next lint",
+        "prettier": "prettier src -check",
+        "lint-staged": "lint-staged --config lint-staged.js",
+        "husky-install": "husky install"
+    },
+    "dependencies": {
+        "@next/font": "13.1.1",
+        "axios": "^1.2.2",
+        "eslint-config-next": "13.1.1",
+        "next": "13.1.1",
+        "react": "18.2.0",
+        "react-dom": "18.2.0",
+        "react-hook-form": "^7.41.5",
+        "react-icons": "^4.7.1"
+    },
+    "devDependencies": {
+        "eslint": "^8.31.0",
+        "husky": "^8.0.3",
+        "lint-staged": "^13.1.0",
+        "prettier": "^2.8.1"
+    }
 }
